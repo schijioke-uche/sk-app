@@ -1,0 +1,11 @@
+.checkbox_container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.1rem;
+}
+
+.number_input_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}

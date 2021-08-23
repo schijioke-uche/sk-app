@@ -1,0 +1,22 @@
+.info-form__group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.personnel_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  padding-top: 1rem;
+  max-width: 55%;
+  margin-bottom: 8rem;
+}
+
+.personnel_banner {
+  box-shadow: 1px 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+.profile_save_btn {
+  max-width: 25%;
+}

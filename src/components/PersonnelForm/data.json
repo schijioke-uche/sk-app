@@ -1,0 +1,20 @@
+{
+  "roles": [
+    "Cloud Engineer",
+    "Sr. Cloud Engineer",
+    "Solutions Architect",
+    "Data Scientist",
+    "Designer"
+  ],
+  "initialFormData": {
+    "employee_id": "",
+    "name": "",
+    "email": "",
+    "role": "",
+    "manager": "",
+    "location": "",
+    "industry": "",
+    "language": ""
+  },
+  "industry": ["FSM", "Comms", "Public", "Distribution", "Inudstrial"]
+}

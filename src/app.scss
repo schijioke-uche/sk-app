@@ -1,0 +1,16 @@
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/type/scss/font-family.scss';
+@import 'carbon-components/scss/globals/scss/vendor/@carbon/layout/scss/breakpoint.scss';
+@import 'carbon-components/scss/globals/scss/typography.scss';
+@import 'carbon-components/scss/globals/scss/vars.scss';
+
+@import './components/SkillsHeader/skills-header.scss';
+@import './components/InfoForm/info-form.scss';
+@import './components/ManagerSearchPage/manager-search-page.scss';
+@import './components/ManagerSearchTable/manager-search-table.scss';
+@import './components/LandingPageComponent/landing-page-component.scss';
+
+.loading_spinner {
+  position: absolute;
+  top: 42%;
+  left: 46%;
+}

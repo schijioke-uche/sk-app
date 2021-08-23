@@ -1,0 +1,56 @@
+
+//CHANGE INITAL ROUTE
+//RENDER ALWAYS FROM PREFERENCE
+
+USER SIGNS IN:
+//EMAIL OF USER
+//MAKE DB CALL TO EMPLOYEE TABLE, DOES USER EXIST?
+  //IF EXISTS DB CALL TO PREFERENCE
+  //IF NOT, CREATE NEW EMPLOYEE
+    //RETURN EMPLOYEE ID
+    //CREATE NEW PREFERENCE TABLE WITH EMPLOYEE ID
+
+USER FILLS OUT AND SUBMITS Form
+
+
+
+
+Original_Skills_Object = {skill_id, rating, want_to_learn}
+New_Skills_Object = {skill_id, rating, want_to_learn}
+
+org_user_object
+new_user_object
+//IF New_Skills_Object == Original_Skills_Object && org_user_object && new_user_object
+  //DO NOTHING
+RETURN "
+//IF USERS CHANGES
+  //USER API CALL
+  //UPSERT employees TABLE
+//IF SKILLS CHANEG
+  //UPSERT preference TABLE
+
+RETURN "CHANGES HAVE BEEN SAVED"
+
+
+
+
+
+
+//account for first time visit vs returning
+IF(USER.ID is IN PREFERENCE){
+  continue;
+}else{
+  DO WORK
+}
+
+//RECERTIFY SKILLS AFTER 2 years
+INSERT INTO preference(skill_id, employee_id)
+VALUES
+(123214)
+
+//IF THERE EXISTS WITHIN preference EMPLOYEE ID
+  populate the info page from the prefernce table
+//OTHERWISE
+  populate the info page from the skills, and a new preference table
+
+

@@ -1,0 +1,33 @@
+---
+kind: PersistentVolume
+apiVersion: v1
+metadata:
+  name: storage-persistent-volume
+  labels:
+    role: Filesystem
+    PersistentVolumeClaim: artifactory-volume
+spec:
+  storageClassName: ibmc-block-gold
+  capacity:
+    storage: 5Gi
+  accessModes:
+    - ReadWriteMany
+  hostPath:
+    path: "/opt/mnt/var"
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  finalizers:
+    - kubernetes.io/pvc-protection
+  labels:
+    role: Filesystem
+  name: storage-persistent-volume-claim
+spec:
+  storageClassName: ibmc-block-gold
+  accessModes:
+  - ReadWriteMany
+  resources:
+    requests:
+      storage: 5Gi
+    volumeMode: Filesystem

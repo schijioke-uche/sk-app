@@ -1,0 +1,62 @@
+@import '../TextInputComponent/text-input-component.scss';
+@import '../CheckBoxComponent/checkbox-component.scss';
+@import '../PersonnelForm/personnel-form.scss';
+@import './mixins.scss';
+
+.info-page__banner {
+  padding-top: $spacing-05;
+  padding-bottom: $spacing-07 * 4;
+  margin: 0 1rem 3rem 1rem;
+  @include landing-page-background;
+}
+
+.save_info_button {
+  margin-top: 5;
+}
+
+.info-page__heading {
+  @include carbon--type-style('productive-heading-05');
+}
+
+.info__accordion {
+  margin: 1rem;
+  max-width: 55%;
+}
+.info-form__accordion_container {
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+}
+.info-form__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.bx--accordion__title {
+  font-size: large;
+}
+@media (min-width: 640px) {
+  .bx--accordion__content {
+    padding-right: 0;
+  }
+}
+.info_btn_container {
+  width: 88%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+}
+.bx--btn-set {
+  display: flex;
+  // justify-content: center;
+}
+.accordion_container {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  margin-bottom: 1rem;
+}
+
+.hide_btn_container {
+  padding: 0 !important;
+}
